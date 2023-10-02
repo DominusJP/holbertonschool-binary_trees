@@ -8,14 +8,22 @@ typedef struct binary_tree_s {
     struct binary_tree_s *right;
 } binary_tree_t;
 
-/* Function to create a binary tree node */
-binary_tree_t *binary_tree_node(binary_tree_t *parent, int value) {
+/**
+ * binary_tree_node - creates a binary tree node
+ * @parent: pointer to the parent node of the node to create
+ * @value: the value to put in the new node
+ *
+ * Return: pointer to the new node, or NULL on failure
+ */
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
+{
     binary_tree_t *new_node;
 
     /* Allocate memory for the new node */
     new_node = malloc(sizeof(binary_tree_t));
-    if (new_node == NULL) {
-        return NULL; /* Return NULL on failure to allocate memory */
+    if (new_node == NULL)
+    {
+        return (NULL); /* Return NULL on failure to allocate memory */
     }
 
     /* Initialize the new node's values */
@@ -24,6 +32,6 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value) {
     new_node->left = NULL;
     new_node->right = NULL;
 
-    return new_node; /* Return a pointer to the new node */
+    return (new_node); /* Return a pointer to the new node */
 }
 
