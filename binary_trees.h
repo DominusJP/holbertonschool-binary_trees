@@ -83,8 +83,6 @@ heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
 
-#include "binary_trees.h"
-
 /**
  *  * binary_tree_is_perfect - Checks if a binary tree is perfect.
  *   * @tree: A pointer to the root node of the tree to check.
