@@ -83,17 +83,4 @@ heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
 
-/**
- *  * binary_tree_is_perfect - Checks if a binary tree is perfect.
- *   * @tree: A pointer to the root node of the tree to check.
- *    *
- *     * Return: 1 if the binary tree is perfect, 0 otherwise. If tree is NULL, return 0.
- *      */
-int binary_tree_is_perfect(const binary_tree_t *tree)
-{
-	    /* Use the binary_tree_height function here */
-	    /* ... */
-}
-
-
 #endif /* BINARY_TREES_H */
